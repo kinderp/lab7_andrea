@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", e =>{
         let display = document.querySelector("#display");
         fetch(query1)
         .then(response => {
-            console.log(message);
+            console.log(response);
             display.innerText = `UNO: ${response.status} ${response.statusText}`;
         })
     })
@@ -46,5 +46,6 @@ window.addEventListener("DOMContentLoaded", e =>{
                 console.log(response);
                 display.innerText = `TRE: ${response.status} ${response.statusText}`;
             })
+    })
     })
 })

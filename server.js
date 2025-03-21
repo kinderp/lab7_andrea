@@ -22,7 +22,6 @@ app.get('/users/:id/:token', (req, res) => {
     res.status(200).send("OK");
 });
 
-app.use(express.json()) 
 app.use(express.urlencoded({ extended: true })) 
 
 app.post('/users', (req, res) => {
